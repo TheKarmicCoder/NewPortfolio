@@ -49,7 +49,7 @@ const WORK = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 
 position: absolute;
-top: 50%;
+top: 48%;
 left: calc(1rem + 2vw);
 transform: translate(-50%, -50%) rotate(-90deg) ;
 text-decoration: none;
@@ -110,6 +110,12 @@ transition: all 1s ease;
 &>:last-child{
     display: ${props => props.click ? 'none' :'inline-block'  };
     padding-top: 1rem;
+}
+@media screen and (max-width: 320px) {
+    top: ${props => props.click ? '85%' :'50%'  };
+    left: ${props => props.click ? '92%' :'50%'  };
+   
+   
 }
 `
 
@@ -208,7 +214,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    About.
+                    About
                 </motion.h2>
             </ABOUT>
             <SKILLS to="/skills">
@@ -224,7 +230,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills.
+                    My Skills
                 </motion.h2>
             </SKILLS>
 

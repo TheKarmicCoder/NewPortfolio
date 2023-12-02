@@ -4,10 +4,9 @@ import styled from "styled-components";
 import {
   FaGithub,
   FaTwitter,
-  FaFacebook,
-  FaYoutube,
   FaLinkedin,
   FaInstagram,
+  FaYoutube,
 } from "react-icons/fa";
 import { DarkTheme } from "../components/Themes";
 
@@ -24,6 +23,46 @@ const Icons = styled.div`
 
   & > *:not(:last-child) {
     margin: 0.5rem 0;
+  }
+
+  @media (max-width: 320px) {
+    bottom: -7rem; /* Adjust the bottom value as needed */
+    left: 1rem; /* Add this line to move it to the left */
+    
+    & > *:not(:last-child) {
+      margin: 0.1rem 0; /* Adjust the margin for smaller gap */
+    }
+  }
+  @media screen and (min-width: 321px) and (max-width: 425px) {
+    
+    bottom: -7rem; /* Adjust the bottom value as needed */
+    left: 1rem; /* Add this line to move it to the left */
+    
+    & > *:not(:last-child) {
+      margin: 0.1rem 0; /* Adjust the margin for smaller gap */
+    }
+ 
+  }
+  @media screen and (min-width: 426px) and (max-width: 767px) {
+    bottom: -7rem; /* Adjust the bottom value as needed */
+    left: 1rem; /* Add this line to move it to the left */
+    
+    & > *:not(:last-child) {
+      margin: 0.1rem 0; /* Adjust the margin for smaller gap */
+    }
+  
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    bottom: -7rem; /* Adjust the bottom value as needed */
+    left: 1rem; /* Add this line to move it to the left */
+    
+    & > *:not(:last-child) {
+      margin: 0.1rem 0; /* Adjust the margin for smaller gap */
+    }
+  
+    
   }
 `;
 
@@ -80,7 +119,9 @@ const SocialIcons = (props) => {
           style={{ color: "inherit" }}
           target="_blank"
           rel="noopener noreferrer"
-          href={"https://www.linkedin.com/in/jordan-a-golden?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"}
+          href={
+            "https://www.linkedin.com/in/jordan-a-golden?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          }
         >
           <FaLinkedin
             size={25}
@@ -97,7 +138,9 @@ const SocialIcons = (props) => {
           style={{ color: "inherit" }}
           target="_blank"
           rel="noopener noreferrer"
-          href={"https://instagram.com/karrma_worldwide?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"}
+          href={
+            "https://instagram.com/karrma_worldwide?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"
+          }
         >
           <FaInstagram
             size={25}

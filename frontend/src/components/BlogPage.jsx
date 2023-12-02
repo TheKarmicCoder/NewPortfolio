@@ -13,25 +13,33 @@ import { motion } from 'framer-motion'
 
 
 const MainContainer = styled(motion.div)`
-position: relative;
-min-height: 300vh;
-overflow: hidden;
+  position: relative;
+  min-height: 300vh;
+  overflow: hidden;
 
-&:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(${img});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5; /* Adjust the opacity as needed */
-  z-index: -1; /* Place the overlay behind other content */
-}
-`
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 320px) {
+    &:before {
+      background-size: cover; /* Set to cover for screens with max-width: 320px */
+      margin-top: -50px;
+    }
+  }
+`;
+
 // const Container = styled.div`
 // background-color: ${props => `rgba(${props.theme.bodyRgba},0.8)`};
 // width: 100%;
@@ -121,7 +129,7 @@ const BlogPage = () => {
                 ))}
               </Grid> */}
           
-              <BigTitle text="Books" top="5rem" left="5rem" />
+              <BigTitle text="Books" top="5rem" left="1rem" />
             </MainContainer>
           );
 }

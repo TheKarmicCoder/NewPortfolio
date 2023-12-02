@@ -26,7 +26,7 @@ export const Work = [
         description:"Fullstack application for a local smokeshop looking to gain marketing presence with a fullstack SMS web app.  ",
         tags:["react","mongodb","express, nodejs, webtoolkit, react-router "],
         
-        demo:"",
+        demo:"https://aj-smoke-shop.vercel.app/",
         github:"https://github.com/TheKarmicCoder/SmokeShop"
     },
     {
@@ -50,11 +50,11 @@ export const Work = [
     },
     {
         id:6,
-        name:"Threads-Native",
-        description:"A reponsive Instagram Threads App made using React Native.",
+        name:"OverTown Insurance Agency",
+        description:"A reponsive web app for an insurance agency. this app allows users to browse the selection of services as well as send a custom message for a quote via email with form & validation",
         tags:["react native","react-router","css"],
         
-        demo:"",
+        demo:"https://overtown-insurance.vercel.app/",
         github:"https://github.com/TheKarmicCoder/Threads-Native"
         
     },
@@ -64,7 +64,7 @@ export const Work = [
         description:"Initial portfolio made with Reactjs and styled using tailwind css. This was also my first attempt in using threejs and react-three-fiber",
         tags:["react","react-three-fiber","threejs", "tailwind"],
         
-        demo:"",
+        demo:"https://portfolio-mu-ten-50.vercel.app/",
         github:"https://github.com/TheKarmicCoder/portfolio"
     },
     

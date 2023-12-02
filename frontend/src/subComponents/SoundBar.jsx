@@ -26,6 +26,16 @@ z-index:10;
 &>*:nth-child(5){
     animation-delay: 0.8s;
 }
+@media (max-width: 320px) {
+  margin-left: -3rem;
+  margin-top: -7px;
+  }
+
+  @media (min-width: 375px) and (max-width: 375px) {
+    margin-left: -1.5rem;
+    margin-top: -7px;
+  }
+ 
 `
 
 const play = keyframes`

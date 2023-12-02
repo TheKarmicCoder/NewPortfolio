@@ -23,9 +23,9 @@ const float = keyframes`
 100% { transform: translateY(-10px) }
 
 `
-const Spaceman = styled.div`
+const Butterfly = styled.div`
 position: absolute;
-top: 10%;
+top: 5%;
 right: 5%;
 width: 20vw;
 animation: ${float} 4s ease infinite;
@@ -39,7 +39,7 @@ const Main =  styled.div`
   color: ${(props) => props.theme.text};
   padding: 2rem;
   width: 50vw;
-  height: 60vh;
+  height: 70vh;
   z-index: 3;
   line-height: 1.5;
   display: flex;
@@ -53,6 +53,15 @@ const Main =  styled.div`
   top: 10rem;
   font-family: 'Ubuntu Mono', monospace;
   font-style: italic;
+  @media (max-width: 320px) {
+    bottom: -1rem; /* Adjust the bottom value as needed */
+    left: 4rem; /* Add this line to move it to the left */
+    top: 8.5rem;
+    
+    & > *:not(:last-child) {
+      margin: 0.1rem 0; /* Adjust the margin for smaller gap */
+    }
+  }
 `
 
 
@@ -68,9 +77,9 @@ const AboutPage = () => {
 <PowerButton />
 <ParticleComponent theme='dark' />
 
-        <Spaceman>
-            <img src={astronaut} alt="spaceman" />
-        </Spaceman>    
+        <Butterfly>
+            <img src={astronaut} alt="Butterfly" />
+        </Butterfly>    
         <Main>
         I'm a Fullstack Developer that loves to create simple yet beautiful websites with great user experience.
 <br /> <br/>
@@ -79,7 +88,7 @@ I'm interested in the whole Fullstack process and Like trying to incorporate ani
 I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
         </Main>
 
-        <BigTitle text="ABOUT" top="10%" left="5%" />
+        <BigTitle text="ABOUT" top="10%" left="5%"  />
 
 
         </Box>
